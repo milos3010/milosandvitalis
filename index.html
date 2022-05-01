@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>MILOS AND VITALIS</title>
-<link rel="stylesheet" href="./index.css">
+<link rel="stylesheet" href="./index. name="mycheck"css">
 </head>
 <body>
     <div class="container">
@@ -16,23 +16,58 @@
         <form>
             <div>
                 <p>Name</p>
-                <input placeholder="enter your name" type="text" required="True" />
+                <input placeholder="enter your name" type="checkbox" name="mycheck" required />
             </div>
             <div>
-                <p></p>
-                <input/>
+                <p>Email</p>
+                <input type ="checkbox" name="mycheck" placeholder="enter your email" required />
             </div>
             <div>
                 <p></p>
                 <input  />
             </div>
             <div>
-                <p></p>
-                <input/>
+                <p>Which option best describes your current role?</p>
+                <select>
+               <option disabled>Select curent role</option>
+               <option> Student </option>
+               <option> First time job </option>
+               <option> First time learner </option>
+               <option> Prefer not to say </option>
+               <option> Other </option>
+
+                </select>   
+            </div> 
+            <div> 
+             <p> Would you recommend freeCodeCamp to a friend? </p>
+            <input type = "radio" value=" definetry" name = "noture" > definetry
+            <input type = "radio" value = "maybe" name = "noture"> maybe
+            <input type = "radio" value = "not sure" name = "noture"> not sure
             </div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>
+                <p>What is your favorite feature of freeCodeCamp?</p>
+                <select required>
+                    <option disabled selected value >select an option</option>
+                    <option value="challenges">challenges</option>
+                    <option value="projects">projects</option>
+                    <option value="community">community</option>
+                </select>
+            </div>
+            <div>
+                <p>What would you like to see improved? (Check all that apply)</p>
+                 
+                <label for=""><input type="checkbox" name="mycheck" />Front-end project</label>
+                <label for=""><input type="checkbox" name="mycheck"> Back end project</label>
+                <label for=""><input type="checkbox" name="mycheck"> Data visualization</label>
+                <label for=""><input type="checkbox" name="mycheck">challenges</label>
+                <label for=""><input type="checkbox" name="mycheck">Open source community</label>
+                <label for=""> <input type="checkbox" name="mycheck">Gitter help rooms</label>
+                <label for=""> <input type="checkbox" name="mycheck">V ideos </label>
+                <label for=""> <input type="checkbox" name="mycheck" >City meetups</label>
+                <label for=""> <input type="checkbox" name="mycheck" >wiki</label>
+                <label for=""> <input type="checkbox" name="mycheck" >Forums</label>
+                <label for=""> <input type="checkbox" name="mycheck" >Additional courses</label>
+            </div>
             <div></div>
 
         </form>
